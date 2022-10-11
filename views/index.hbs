@@ -1,0 +1,60 @@
+<body>
+    <header>
+        <div class="contenedor head">
+            <h1 class="titulo">Expertos en educación</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor">
+            <h1 class="subtitulo">Nuestros servicios</h1>
+            <div class="contenedor-servicio">
+                <img src="images/Tiny students learning online lesson via laptop.jpg" alt="">
+                <div class="nuestro-servicio">
+                    <div>
+                        <h3 class="service">Diplomaturas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium sapiente vitae.</p>
+                    </div>                    
+                    <div>
+                        <h3 class="service">Carreras</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium sapiente vitae.</p>
+                    </div>
+                    <div>
+                        <h3 class="service">Maestrías</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam praesentium sapiente vitae.</p>
+                    </div>
+                </div>
+        <section class="contenedor">
+            <h1 class="subtitulo"> Nuestros expertos académicos</h1>   
+            <div class="staff">
+                {{#each staff}}
+                <div class="card-staff">
+                    <img src="{{img}}">
+                    <p>{{nombre}}</p>
+                    <p>{{apellido}}</p>
+                    <p> <b>{{puesto}}</b> </p>
+                </div>    
+                {{/each}}
+            </div> 
+        </section>
+        <section class="contacto">
+            <h1 class="subtitulo">Contacto</h1>
+            <h3>Comunicate con nosotros</h3>
+            <div class="formulario">
+                <form method="post">
+                    <input type="text" name="nombre" placeholder="Nombre completo">
+                    <br>
+                    <input type="email" name="correo" placeholder="Correo elctrónico">
+                    <br>
+                    <textarea name="mensaje" cols="25" rows="8" placeholder="Dejanos tu mensaje"></textarea>
+                    <br>
+                    <div>
+                        <input class="input" type="reset" value="Borrar">
+                        <input class="input" type="submit" value="Enviar">            
+                    </div>
+                    <p>{{message}}</p>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>

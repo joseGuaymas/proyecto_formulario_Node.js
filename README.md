@@ -1,0 +1,3 @@
+Curso Desarrollador Web Full Stack. UTN-BA. Trabajo integrador Módulo 1.
+
+Consigna: Crear una página web con Node JS. Debe incluir: a) un formulario que implemente la función de enviar los datos ingresados por el usuario a un servidor de correo como mailtrap (ejemplo visto y construido en clase). b) un listado de datos que se muestre en el front end en forma de lista, tabla o cards. Los datos deben provenir de una base de datos (ejemplo visto y construido en clase).
